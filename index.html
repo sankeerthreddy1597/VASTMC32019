@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>VAST Challenge 2019 MC 3</title>
+    <link rel="stylesheet" href="css/styles.css" />
+    <script src="https://d3js.org/d3.v5.min.js"></script>
+    <!--Can we bump this up to v6?-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!--I have a soft spot for jquery-->
+    <script src="scripts/index.js"></script>
+  </head>
+  <body>
+    <header>
+      <h2>VAST Challenge 2019 MC 3: Voice from the People</h2>
+      <h3>
+        Jitesh Pabla, Debarshi Roy, Shivank Tiwari, Danielle Jacobs, Chirra
+        Reddy Sai Sankeerth Reddy, Adam Brossman
+      </h3>
+      <hr style="width: 100%" />
+      <div class="tab">
+        <button
+          id="resources-btn"
+          class="tablinks"
+          onclick="openTab(event, 'resources')"
+        >
+          Resources
+        </button>
+        <button
+          id="sentiment-btn"
+          class="tablinks"
+          onclick="openTab(event, 'sentiment')"
+        >
+          Sentiment
+        </button>
+        <button
+          id="communications-btn"
+          class="tab-links"
+          onclick="openTab(event, 'communications')"
+        >
+          Communications
+        </button>
+      </header>
+      <div id="resources" class="tab-content">
+        <!-- Now pulled from svg file and inserted on load
+        <svg id="map">
+          <g>
+            <text x="20" y="20" fill="blue">
+              A map showing which area needs most resources
+            </text>
+          </g>
+        </svg-->
+        <svg id="select-controls">
+          <g>
+            <text x="20" y="20" fill="blue">
+              Controls to select which resource to show
+            </text>
+          </g>
+        </svg>
+        <svg id="pie-chart">
+          <g>
+            <text x="20" y="20" fill="blue">
+              Pie chart showing the frequency of each resource within the time
+              frame
+            </text>
+          </g>
+        </svg>
+        <svg id="line-chart1">
+          <g>
+            <text x="20" y="20" fill="blue">
+              Line chart showing the distribution of each resource within the
+              time frame
+            </text>
+          </g>
+        </svg>
+        <svg id="line-chart2">
+          <g>
+            <text x="20" y="20" fill="blue">
+              Line chart to show and mark the earthquakes on the timeline
+            </text>
+          </g>
+        </svg>
+      </div>
+      <div id="sentiment" class="tab-content">
+        <svg id="map">
+          <g>
+            <text x="20" y="20" fill="blue">
+              Heat map for sentiment analysis
+            </text>
+          </g>
+        </svg>
+        <svg id="select-controls">
+          <g><text x="20" y="20" fill="blue">Controls, filters, etc.</text></g>
+        </svg>
+        <svg id="flow-diagram">
+          <g><text x="20" y="20" fill="blue">Flow diagram</text></g>
+        </svg>
+      </div>
+      <div id="communications" class="tab-content">
+        <svg id="user-interaction-network">
+          <g><text x="20" y="20" fill="blue">User Interaction Network</text></g>
+        </svg>
+        <svg id="select-controls">
+          <g><text x="20" y="20" fill="blue">Controls, filters, etc.</text></g>
+        </svg>
+        <svg id="retweets-layout">
+          <g><text x="20" y="20" fill="blue">Top Retweets</text></g>
+        </svg>
+      </div>
+    </div>
+  </body>
+</html>
